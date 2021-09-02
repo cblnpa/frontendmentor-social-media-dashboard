@@ -18,175 +18,179 @@
 
 <body>
 
-  <div class="block">
-
-    <div class="flex w-screen">
-      <div class="flex-2 flex-grow">
-        <h1 class="text-3xl font-semibold">Social Media Dashboard</h1>
-        <span class="text-gray-600 font-semibold">Total Followers: 23,004</span>
-      </div>
-
-      <div class="flex-1 self-center">
-        <span class="text-right">Dark Mode</span>
-        <button>toggle</button>
-      </div>
+  <div class="flex w-screen mb-10">
+    <div class="flex-2 flex-grow mx-32 mt-10">
+      <h1 class="text-3xl font-semibold">Social Media Dashboard</h1>
+      <span class="text-gray-600 font-semibold">Total Followers: 23,004</span>
     </div>
 
-    <div class="grid gap-4 grid-cols-4">
-
-      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-fb">
-
-        <img class="inline-block" src="./images/icon-facebook.svg" alt="facebook-logo">
-        <span class="text-gray-500 text-xs font-semibold">@nathanf</span>
-        <h2 class="text-5xl font-bold mt-3">1987</h2>
-        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
-        <div class="mt-5 text-green-400 font-semibold text-xs">
-          &#x25b4; 12 Today
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-tw">
-        <img class="inline-block" src="./images/icon-twitter.svg" alt="facebook-logo">
-        <span class="text-gray-500 text-xs font-semibold">@nathanf</span>
-        <h2 class="text-5xl font-bold mt-3">1044</h2>
-        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
-        <div class="mt-5 text-green-400 font-semibold text-xs">
-          &#x25b4; 99 Today
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-ig">
-        <img class="inline-block" src="./images/icon-instagram.svg" alt="facebook-logo">
-        <span class="text-gray-500 text-xs font-semibold">@realnathanf</span>
-        <h2 class="text-5xl font-bold mt-3">11k</h2>
-        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
-        <div class="mt-5 text-green-400 font-semibold text-xs">
-          &#x25b4; 1099 Today
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-yt">
-        <img class="inline-block" src="./images/icon-youtube.svg" alt="facebook-logo">
-        <span class="text-gray-500 text-xs font-semibold">Nathan F.</span>
-        <h2 class="text-5xl font-bold mt-3">8239</h2>
-        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
-        <div class="mt-5 text-red-500 font-semibold text-xs">
-          &#x25be; 144 Today
-        </div>
-      </div>
-
+    <div class="flex-1 self-center text-right mr-2">
+      <label for="toggle" class="text-xs text-gray-700">Dark mode</label>
     </div>
 
-    <h4 class="font-semibold text-2xl text-gray-600 bg-gray-100 my-6 py-4">Overview - Today</h4>
-
-    <div class="grid gap-4 grid-cols-4 mb-6">
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Page Views</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-facebook.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">87</h3>
-          <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 3%</p>
-        </div>
+    <div class="flex-1 self-center">
+      <div class="relative w-9 select-none transition duration-200 ease-in">
+        <input type="checkbox" name="toggle" id="toggle"
+          class="toggle-checkbox absolute w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+        <label for="toggle" class="toggle-label block h-6 rounded-full bg-gray-300 cursor-pointer"></label>
       </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-facebook.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">52</h3>
-          <p class="self-center text-red-500 font-semibold text-sm justify-self-end"> &#x25be; 2%</p>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-instagram.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">5462</h3>
-          <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 2257%</p>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Profile Views</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-instagram.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">52k</h3>
-          <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 1375%</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="grid gap-4 grid-cols-4">
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Retweets</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-twitter.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">117</h3>
-          <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 303%</p>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-twitter.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">507</h3>
-          <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 553%</p>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-youtube.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">107</h3>
-          <p class="self-center text-red-500 font-semibold text-sm justify-self-end"> &#x25be; 19%</p>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 text-center rounded-lg p-4">
-        <div class="grid grid-cols-3">
-          <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Total Views</h2>
-          <img class=" inline-block justify-self-end self-center" src="./images/icon-youtube.svg" alt="facebook-logo">
-        </div>
-
-        <div class="grid grid-cols-3 mt-4">
-          <h3 class="text-4xl font-bold col-span-2 justify-self-start">1407</h3>
-          <p class="self-center text-red-500 font-semibold text-sm justify-self-end"> &#x25be; 12%</p>
-        </div>
-      </div>
-
     </div>
   </div>
 
-  <div class="sticky bottom-0 mt-10 bg-white text-center p-3">
+  <div class="grid gap-4 grid-cols-4 mx-32">
+
+    <div class="bg-gray-100 text-center rounded-lg p-4 border-top-fb">
+
+      <img class="inline-block" src="./images/icon-facebook.svg" alt="facebook-logo">
+      <span class="text-gray-500 md:text-xs font-semibold">@nathanf</span>
+      <h2 class="md:text-3xl lg:text-5xl xs:text-2xl font-bold mt-3">1987</h2>
+      <p class="font-thin tracking-widest uppercase text-xs text-gray-500 mt-2">Followers</p>
+      <div class="mt-5 text-green-400 font-semibold text-xs">
+        &#x25b4; 12 Today
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4 border-top-tw">
+      <img class="inline-block" src="./images/icon-twitter.svg" alt="facebook-logo">
+      <span class="text-gray-500 text-xs font-semibold">@nathanf</span>
+      <h2 class="md:text-3xl lg:text-5xl xs:text-2xl font-bold mt-3">1044</h2>
+      <p class="font-thin tracking-widest uppercase text-xs text-gray-500 mt-2">Followers</p>
+      <div class="mt-5 text-green-400 font-semibold text-xs">
+        &#x25b4; 99 Today
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4 border-top-ig">
+      <img class="inline-block" src="./images/icon-instagram.svg" alt="facebook-logo">
+      <span class="text-gray-500 text-xs font-semibold">@realnathanf</span>
+      <h2 class="md:text-3xl lg:text-5xl xs:text-2xl font-bold mt-3">11k</h2>
+      <p class="font-thin tracking-widest uppercase text-xs text-gray-500 mt-2">Followers</p>
+      <div class="mt-5 text-green-400 font-semibold text-xs">
+        &#x25b4; 1099 Today
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4 border-top-yt">
+      <img class="inline-block" src="./images/icon-youtube.svg" alt="facebook-logo">
+      <span class="text-gray-500 text-xs font-semibold">Nathan F.</span>
+      <h2 class="md:text-3xl lg:text-5xl xs:text-2xl font-bold mt-3">8239</h2>
+      <p class="font-thin tracking-widest uppercase text-xs text-gray-500 mt-2">Followers</p>
+      <div class="mt-5 text-red-500 font-semibold text-xs">
+        &#x25be; 144 Today
+      </div>
+    </div>
+
+  </div>
+
+  <h4 class="font-semibold text-2xl text-gray-600 my-6 py-4 mx-32">Overview - Today</h4>
+
+  <div class="grid gap-4 grid-cols-4 mb-6 mx-32">
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Page Views</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-facebook.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-3xl lg:text-5xl xs:text-2xl font-bold col-span-2 justify-self-start">87</h3>
+        <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 3%</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-facebook.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-3xl lg:text-5xl xs:text-2xl font-bold col-span-2 justify-self-start">52</h3>
+        <p class="self-center text-red-500 font-semibold text-sm justify-self-end"> &#x25be; 2%</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-instagram.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-lg lg:text-5xl xs:text-xs font-bold col-span-2 justify-self-start">5462</h3>
+        <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 2257%</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Profile Views</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-instagram.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-lg lg:text-5xl xs:text-2xl font-bold col-span-2 justify-self-start">52k</h3>
+        <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 1375%</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="grid gap-4 grid-cols-4 mx-32">
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Retweets</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-twitter.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-2xl lg:text-5xl xs:text-2xl font-bold col-span-2 justify-self-start">117</h3>
+        <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 303%</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-twitter.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-2xl lg:text-5xl xs:text-2xl font-bold col-span-2 justify-self-start">507</h3>
+        <p class="self-center text-green-400 font-semibold text-sm justify-self-end"> &#x25b4; 553%</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Likes</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-youtube.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-2xl lg:text-5xl xs:text-2xl font-bold col-span-2 justify-self-start">107</h3>
+        <p class="self-center text-red-500 font-semibold text-sm justify-self-end"> &#x25be; 19%</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 text-center rounded-lg p-4">
+      <div class="grid grid-cols-3">
+        <h2 class="col-span-2 text-gray-600 font-semibold justify-self-start">Total Views</h2>
+        <img class=" inline-block justify-self-end self-center" src="./images/icon-youtube.svg" alt="facebook-logo">
+      </div>
+
+      <div class="grid grid-cols-3 mt-4">
+        <h3 class="md:text-lg lg:text-5xl xs:text-2xl font-bold col-span-2 justify-self-start">1407</h3>
+        <p class="self-center text-red-500 font-semibold text-sm justify-self-end"> &#x25be; 12%</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sticky bottom-0 mt-10 bg-white text-center p-3 w-screen">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/cblnpa">cblnpa</a>.
   </div>
 </body>
 

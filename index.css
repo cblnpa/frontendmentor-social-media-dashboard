@@ -13,3 +13,12 @@
 .border-top-yt {
     border-top: solid hsl(348, 97%, 39%);
 }
+
+.toggle-checkbox:checked {
+    right: 0;
+    border-color: #68d391;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #68d391;
+}
