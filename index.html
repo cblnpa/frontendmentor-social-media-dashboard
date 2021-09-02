@@ -11,6 +11,7 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="./darkMode.js"></script>
 
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -30,7 +31,7 @@
 
     <div class="flex-1 self-center">
       <div class="relative w-9 select-none transition duration-200 ease-in">
-        <input type="checkbox" name="toggle" id="toggle"
+        <input type="checkbox" name="toggle" id="toggle" onchange="handleChange(this);"
           class="toggle-checkbox absolute w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
         <label for="toggle" class="toggle-label block h-6 rounded-full bg-gray-300 cursor-pointer"></label>
       </div>
