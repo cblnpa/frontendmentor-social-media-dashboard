@@ -1,87 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <div class="block">
 
-  Dark Mode
+    <div class="flex w-screen">
+      <div class="flex-2 flex-grow">
+        <h1 class="text-4xl">Social Media Dashboard</h1>
+        <span class="text-gray-700">Total Followers: 23,004</span>
+      </div>
 
-  
+      <div class="flex-1 self-center">
+        <span class="text-right">Dark Mode</span>
+        <button>toggle</button>
+      </div>
+    </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <div class="grid gap-4 grid-cols-4">
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-fb">
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+        <img class="inline-block" src="./images/icon-facebook.svg" alt="facebook-logo">
+        <span class="text-gray-500 text-xs font-semibold">@nathanf</span>
+        <h2 class="text-5xl font-bold mt-3">1987</h2>
+        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
+        <div class="mt-5 text-green-400 font-semibold text-xs">
+          &#x25b4; 12 Today
+        </div>
+      </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-tw">
+        <img class="inline-block" src="./images/icon-twitter.svg" alt="facebook-logo">
+        <span class="text-gray-500 text-xs font-semibold">@nathanf</span>
+        <h2 class="text-5xl font-bold mt-3">1044</h2>
+        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
+        <div class="mt-5 text-green-400 font-semibold text-xs">
+          &#x25b4; 99 Today
+        </div>
+      </div>
 
+      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-ig">
+        <img class="inline-block" src="./images/icon-instagram.svg" alt="facebook-logo">
+        <span class="text-gray-500 text-xs font-semibold">@realnathanf</span>
+        <h2 class="text-5xl font-bold mt-3">11k</h2>
+        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
+        <div class="mt-5 text-green-400 font-semibold text-xs">
+          &#x25b4; 1099 Today
+        </div>
+      </div>
 
+      <div class="bg-gray-100 text-center rounded-lg p-4 border-top-yt">
+        <img class="inline-block" src="./images/icon-youtube.svg" alt="facebook-logo">
+        <span class="text-gray-500 text-xs font-semibold">Nathan F.</span>
+        <h2 class="text-5xl font-bold mt-3">8239</h2>
+        <p class="font-thin tracking-widest uppercase text-xs text-gray-500">Followers</p>
+        <div class="mt-5 text-red-500 font-semibold text-xs">
+          &#x25be; 144 Today
+        </div>
+      </div>
 
-  Overview - Today
+    </div>
 
-  Page Views
-  87
-  3%
+    <h4 class="font-semibold text-2xl text-gray-600 bg-gray-100 mt-6 py-4">Overview - Today</h4>
 
-  Likes
-  52
-  2%
+    <div class="grid gap-4 grid-cols-4">
 
-  Likes
-  5462
-  2257%
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Page Views
+        87
+        3%
+      </div>
 
-  Profile Views
-  52k
-  1375%
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Likes
+        52
+        2%
+      </div>
 
-  Retweets
-  117
-  303%
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Likes
+        5462
+        2257%
+      </div>
 
-  Likes
-  507
-  553%
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Profile Views
+        52k
+        1375%
+      </div>
 
-  Likes
-  107
-  19%
+    </div>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <div class="grid gap-4 grid-cols-4">
+
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Retweets
+        117
+        303%
+      </div>
+
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Likes
+        507
+        553%
+      </div>
+
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Likes
+        107
+        19%
+      </div>
+
+      <div class="bg-gray-100 text-center rounded-lg p-4">
+        Total Views
+        1407
+        12%
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sticky bottom-0 mt-10 bg-white text-center p-3">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
